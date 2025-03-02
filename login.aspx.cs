@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.UI;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace CargoManagement
 {
@@ -11,7 +12,7 @@ namespace CargoManagement
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text.Trim();
 
-            string connectionString = "server=localhost;port=3306;database=cargo_db;user=root;password=;";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
 
             try
             {

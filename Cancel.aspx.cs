@@ -2,6 +2,7 @@
 using System.Data;
 using System.Web.UI;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace CargoManagement
 {
@@ -27,7 +28,7 @@ namespace CargoManagement
 
         private void LoadCargoDetails()
         {
-            string connectionString = "server=localhost;port=3306;database=cargo_db;user=root;password=;";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
@@ -62,7 +63,7 @@ namespace CargoManagement
 
         protected void btnConfirmCancel_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=localhost;port=3306;database=cargo_db;user=root;password=;";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();

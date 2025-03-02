@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.UI;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace CargoManagement
 {
@@ -23,7 +24,7 @@ namespace CargoManagement
         private void LoadUserProfile()
         {
             string email = Session["user_login"].ToString();
-            string connectionString = "server=localhost;port=3306;database=cargo_db;user=root;password=;";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
 
             try
             {
@@ -63,7 +64,7 @@ namespace CargoManagement
             string contact = txtContact.Text.Trim();
             string city = txtCity.Text.Trim();
 
-            string connectionString = "server=localhost;port=3306;database=cargo_db;user=root;password=;";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
 
             try
             {

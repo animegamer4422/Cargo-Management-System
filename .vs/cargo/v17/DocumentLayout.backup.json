@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\Hari\\source\\repos\\cargo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\profile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:profile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\payment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:payment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\cancel.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:cancel.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\manageadmins.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:manageadmins.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
@@ -11,16 +35,16 @@
       "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:manageadmins.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\admin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:admin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|C:\\Users\\Hari\\source\\repos\\cargo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\admin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|solutionrelative:admin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{026A1F3A-305F-4492-9E0C-5A71A97A2A9D}|cargo.csproj|c:\\users\\hari\\source\\repos\\cargo\\adminlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,37 +62,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManageAdmins.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\ManageAdmins.aspx.designer.cs",
-              "RelativeDocumentMoniker": "ManageAdmins.aspx.designer.cs",
-              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\ManageAdmins.aspx.designer.cs",
-              "RelativeToolTip": "ManageAdmins.aspx.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "profile.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\profile.aspx.cs",
+              "RelativeDocumentMoniker": "profile.aspx.cs",
+              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\profile.aspx.cs*",
+              "RelativeToolTip": "profile.aspx.cs*",
+              "ViewState": "AgIAADcAAAAAAAAAAAAvwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T19:57:07.636Z",
+              "WhenOpened": "2025-03-02T21:24:16.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Payment.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\Payment.aspx.cs",
+              "RelativeDocumentMoniker": "Payment.aspx.cs",
+              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\Payment.aspx.cs*",
+              "RelativeToolTip": "Payment.aspx.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:23:29.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\login.aspx.cs",
+              "RelativeDocumentMoniker": "login.aspx.cs",
+              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\login.aspx.cs*",
+              "RelativeToolTip": "login.aspx.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAApwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:22:45.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cancel.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\Cancel.aspx.cs",
+              "RelativeDocumentMoniker": "Cancel.aspx.cs",
+              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\Cancel.aspx.cs*",
+              "RelativeToolTip": "Cancel.aspx.cs*",
+              "ViewState": "AgIAADYAAAAAAAAAAAAvwEEAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:18:28.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "register.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\register.aspx.cs",
+              "RelativeDocumentMoniker": "register.aspx.cs",
+              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\register.aspx.cs",
+              "RelativeToolTip": "register.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:01:46.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ManageAdmins.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\ManageAdmins.aspx.cs",
               "RelativeDocumentMoniker": "ManageAdmins.aspx.cs",
               "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\ManageAdmins.aspx.cs",
               "RelativeToolTip": "ManageAdmins.aspx.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAIwGgAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T19:54:05.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ManageAdmins.aspx",
               "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\ManageAdmins.aspx",
               "RelativeDocumentMoniker": "ManageAdmins.aspx",
@@ -81,20 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Admin.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\Admin.aspx.cs",
-              "RelativeDocumentMoniker": "Admin.aspx.cs",
-              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\Admin.aspx.cs",
-              "RelativeToolTip": "Admin.aspx.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAIwJUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T19:40:50.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Admin.aspx",
               "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\Admin.aspx",
               "RelativeDocumentMoniker": "Admin.aspx",
@@ -107,7 +170,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "Admin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\Admin.aspx.cs",
+              "RelativeDocumentMoniker": "Admin.aspx.cs",
+              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\Admin.aspx.cs",
+              "RelativeToolTip": "Admin.aspx.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAIwJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T19:40:50.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AdminLogin.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\AdminLogin.aspx.cs",
               "RelativeDocumentMoniker": "AdminLogin.aspx.cs",
@@ -120,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "AdminLogin.aspx",
               "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\AdminLogin.aspx",
               "RelativeDocumentMoniker": "AdminLogin.aspx",
@@ -134,6 +210,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "register.aspx",
+              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\register.aspx",
+              "RelativeDocumentMoniker": "register.aspx",
+              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\register.aspx",
+              "RelativeToolTip": "register.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-01T14:04:44.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManageAdmins.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Hari\\source\\repos\\cargo\\ManageAdmins.aspx.designer.cs",
+              "RelativeDocumentMoniker": "ManageAdmins.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Hari\\source\\repos\\cargo\\ManageAdmins.aspx.designer.cs",
+              "RelativeToolTip": "ManageAdmins.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T19:57:07.636Z",
+              "EditorCaption": ""
             }
           ]
         }

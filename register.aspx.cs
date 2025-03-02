@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.UI;
 using MySql.Data.MySqlClient;
+using System.Configuration; // Required for accessing web.config
 
 namespace CargoManagement
 {
@@ -10,7 +11,7 @@ namespace CargoManagement
         {
             // Get form values
             string fullname = txtFullname.Text.Trim();
-            string contact = txtContact.Text.Trim(); // Now handled as a string
+            string contact = txtContact.Text.Trim();
             string city = txtCity.Text.Trim();
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text.Trim();
@@ -27,8 +28,15 @@ namespace CargoManagement
             // Hash the password for security
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
 
-            // MySQL connection string
-            string connectionString = "server=localhost;port=3306;database=cargo_db;user=root;password=;";
+            // Retrieve connection string from web.config (same method as ManageAdmins)
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
+
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                lblMessage.Text = "Error: Database connection string is missing in web.config.";
+                lblMessage.ForeColor = System.Drawing.Color.Red;
+                return;
+            }
 
             try
             {
@@ -56,7 +64,7 @@ namespace CargoManagement
                     using (MySqlCommand cmd = new MySqlCommand(insertQuery, conn))
                     {
                         cmd.Parameters.AddWithValue("@Fullname", fullname);
-                        cmd.Parameters.AddWithValue("@Contact", contact); // Fixed: Now stores as VARCHAR
+                        cmd.Parameters.AddWithValue("@Contact", contact);
                         cmd.Parameters.AddWithValue("@City", city);
                         cmd.Parameters.AddWithValue("@Email", email);
                         cmd.Parameters.AddWithValue("@Password", hashedPassword);
@@ -70,6 +78,11 @@ namespace CargoManagement
             catch (MySqlException ex)
             {
                 lblMessage.Text = "Database error: " + ex.Message;
+                lblMessage.ForeColor = System.Drawing.Color.Red;
+            }
+            catch (Exception ex)
+            {
+                lblMessage.Text = "An unexpected error occurred: " + ex.Message;
                 lblMessage.ForeColor = System.Drawing.Color.Red;
             }
         }
