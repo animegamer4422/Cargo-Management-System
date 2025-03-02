@@ -52,7 +52,6 @@
                     <div><strong>Weight:</strong> <asp:Label ID="lblWeight" runat="server"></asp:Label> kg</div>
                     <div><strong>Volume:</strong> <asp:Label ID="lblVolume" runat="server"></asp:Label> m³</div>
                     <div><strong>Quantity:</strong> <asp:Label ID="lblQuantity" runat="server"></asp:Label></div>
-                    <div><strong>Estimated Delivery:</strong> <asp:Label ID="lblEstimatedDelivery" runat="server"></asp:Label></div>
                 </div>
 
                 <!-- Payment Section -->

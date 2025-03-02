@@ -49,7 +49,7 @@ namespace CargoManagement
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT tracking_id, sender_name, sender_city AS pickup, receiver_name, receiver_city AS destination, weight, volume, quantity, estimated_delivery, " +
+                string query = "SELECT tracking_id, sender_name, sender_city AS pickup, receiver_name, receiver_city AS destination, weight, volume, quantity, " +
                                "CASE WHEN status = 0 THEN 'Pending' WHEN status = 1 THEN 'In Transit' WHEN status = 2 THEN 'Delivered' ELSE 'Unknown' END AS status " +
                                "FROM cargo";
 

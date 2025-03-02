@@ -31,7 +31,6 @@
                         <asp:BoundField DataField="weight" HeaderText="Weight (kg)" />
                         <asp:BoundField DataField="volume" HeaderText="Volume (m³)" />
                         <asp:BoundField DataField="quantity" HeaderText="Quantity" />
-                        <asp:BoundField DataField="estimated_delivery" HeaderText="Estimated Delivery Date" />
                         <asp:BoundField DataField="status" HeaderText="Status" />
 
 <asp:TemplateField HeaderText="Action">

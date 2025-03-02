@@ -35,7 +35,7 @@ namespace CargoManagement
                     SELECT c.sender_name, c.sender_contact, c.sender_address, 
                            c.receiver_name, c.receiver_contact, c.receiver_address, 
                            c.sender_city AS pickup, c.receiver_city AS destination, 
-                           c.weight, c.volume, c.quantity, c.estimated_delivery, 
+                           c.weight, c.volume, c.quantity, 
                            p.amount AS amount
                     FROM cargo c
                     JOIN payments p ON c.tracking_id = p.tracking_id
@@ -59,7 +59,6 @@ namespace CargoManagement
                             lblWeight.Text = reader["weight"].ToString();
                             lblVolume.Text = reader["volume"].ToString();
                             lblQuantity.Text = reader["quantity"].ToString();
-                            lblEstimatedDelivery.Text = reader["estimated_delivery"].ToString();
                             lblAmount.Text = "₹" + reader["amount"].ToString();
                         }
                         else

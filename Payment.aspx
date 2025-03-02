@@ -55,7 +55,6 @@
                         <div class="col-md-6">
                             <div class="mb-2"><strong>Volume:</strong> <asp:Label ID="lblVolume" runat="server"></asp:Label> m³</div>
                             <div class="mb-2"><strong>Quantity:</strong> <asp:Label ID="lblQuantity" runat="server"></asp:Label></div>
-                            <div><strong>Estimated Delivery:</strong> <asp:Label ID="lblEstimatedDelivery" runat="server"></asp:Label></div>
                         </div>
                     </div>
                 </div>
