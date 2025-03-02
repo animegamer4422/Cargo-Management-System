@@ -178,6 +178,7 @@
     <Content Include="Footer.ascx" />
     <Content Include="Global.asax" />
     <Content Include="Header.ascx" />
+    <Content Include="images\bg.png" />
     <Content Include="images\logo.png" />
     <Content Include="Invoice.aspx" />
     <Content Include="login.aspx" />

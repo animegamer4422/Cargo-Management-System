@@ -40,13 +40,14 @@ body {
 .banner {
     position: relative;
     text-align: center;
-    background: url('images/banner.jpg') center/cover no-repeat;
     height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    margin: auto 2% auto 2%
+    margin: auto 2% auto 2%;
+    background: url('../images/bg.png') no-repeat center center;
+    background-size: cover
 }
 
     .banner h1 {
@@ -127,7 +128,9 @@ footer {
 
     .banner {
         height: 250px;
-        margin: auto 2% auto 2%
+        margin: auto 2% auto 2% ;
+        background: url('../images/bg.png') no-repeat center center;
+        background-size: cover
     }
 
         .banner h1 {
