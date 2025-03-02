@@ -159,6 +159,13 @@ namespace CargoManagement
                 string trackingId = e.CommandArgument.ToString();
                 Response.Redirect("Cancel.aspx?tracking_id=" + trackingId);
             }
+            else if (e.CommandName == "ViewInvoice")
+            {
+                string trackingId = e.CommandArgument.ToString();
+                Response.Redirect("Invoice.aspx?tracking_id=" + trackingId);
+            }
         }
+
+
     }
 }

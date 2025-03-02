@@ -1,0 +1,43 @@
+# Ignore build outputs and temporary files
+bin/
+obj/
+*.cache
+*.csproj.user
+*.vs/
+*.vscode/
+
+# Ignore private configuration files
+appsettings.json
+appsettings.Development.json
+secrets.json
+.env
+.env.local
+
+# Ignore dependency files
+packages/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore logs and temp files
+*.log
+*.pid
+*.seed
+*.sdf
+*.sqlite
+
+# Ignore IDE specific files
+*.suo
+*.ntvs*
+*.njsproj
+*.pssproj
+*.tmproj
+*.pyc
+
+# Ignore MySQL dumps and database backups
+*.sql
+*.bak
+*.db
+
+# Ignore ASP.NET generated files
+Generated_Code/

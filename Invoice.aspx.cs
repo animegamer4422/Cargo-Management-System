@@ -18,12 +18,28 @@ namespace CargoManagement
         private void LoadInvoiceDetails()
         {
             string trackingId = Request.QueryString["tracking_id"];
+            if (string.IsNullOrEmpty(trackingId))
+            {
+                Response.Write("Error: Missing tracking ID.");
+                return;
+            }
+
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT sender_name, sender_contact, sender_address, receiver_name, receiver_contact, receiver_address, pickup, destination, weight, volume, quantity, estimated_delivery, (weight * 5) AS amount FROM cargo WHERE tracking_id = @TrackingId";
+
+                // **Fetch correct amount from payments table instead of recalculating**
+                string query = @"
+                    SELECT c.sender_name, c.sender_contact, c.sender_address, 
+                           c.receiver_name, c.receiver_contact, c.receiver_address, 
+                           c.sender_city AS pickup, c.receiver_city AS destination, 
+                           c.weight, c.volume, c.quantity, c.estimated_delivery, 
+                           p.amount AS amount
+                    FROM cargo c
+                    JOIN payments p ON c.tracking_id = p.tracking_id
+                    WHERE c.tracking_id = @TrackingId";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -45,6 +61,10 @@ namespace CargoManagement
                             lblQuantity.Text = reader["quantity"].ToString();
                             lblEstimatedDelivery.Text = reader["estimated_delivery"].ToString();
                             lblAmount.Text = "₹" + reader["amount"].ToString();
+                        }
+                        else
+                        {
+                            Response.Write("Error: No invoice found for this tracking ID.");
                         }
                     }
                 }

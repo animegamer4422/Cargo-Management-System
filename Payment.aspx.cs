@@ -48,11 +48,11 @@ namespace CargoManagement
 
             if (!string.IsNullOrEmpty(pickup) && !string.IsNullOrEmpty(destination))
             {
-                int distance = 300; // Default distance
+                int distance = 300; 
                 int basePrice = distance * 5;
-                int weightPrice = (int)weight * 3;
-                int volumePrice = (int)volume * 4;
-                int quantityPrice = quantity * 10;
+                int weightPrice = (int)weight * 30;
+                int volumePrice = (int)volume * 40;
+                int quantityPrice = quantity * 20;
 
                 price = basePrice + weightPrice + volumePrice + quantityPrice;
 

@@ -34,13 +34,21 @@
                         <asp:BoundField DataField="estimated_delivery" HeaderText="Estimated Delivery Date" />
                         <asp:BoundField DataField="status" HeaderText="Status" />
 
-                        <asp:TemplateField HeaderText="Action">
-                            <ItemTemplate>
-                                <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-danger btn-sm"
-                                    Text="Cancel" CommandName="CancelCargo" CommandArgument='<%# Eval("tracking_id") %>' 
-                                    OnClientClick="return confirm('Are you sure you want to cancel this cargo?');" />
-                            </ItemTemplate>
-                        </asp:TemplateField>
+<asp:TemplateField HeaderText="Action">
+    <ItemTemplate>
+        <!-- Cancel Button (Only for Pending/In-Transit Deliveries) -->
+        <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-danger btn-sm"
+            Text="Cancel" CommandName="CancelCargo" CommandArgument='<%# Eval("tracking_id") %>' 
+            OnClientClick="return confirm('Are you sure you want to cancel this cargo?');"
+            Visible='<%# Eval("status").ToString() != "Delivered" %>' />
+
+        <!-- Invoice Button (Only for Delivered Cargo) -->
+        <asp:Button ID="btnInvoice" runat="server" CssClass="btn btn-success btn-sm"
+            Text="Invoice" CommandName="ViewInvoice" CommandArgument='<%# Eval("tracking_id") %>' 
+            Visible='<%# Eval("status").ToString() == "Delivered" %>' />
+    </ItemTemplate>
+</asp:TemplateField>
+
                     </Columns>
                 </asp:GridView>
             </div>
