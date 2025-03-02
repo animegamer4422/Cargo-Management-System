@@ -1,0 +1,141 @@
+﻿/* 🔹 Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* 🔹 Navbar Styles */
+.navbar {
+    background-color: #343a40;
+    padding: 15px 0;
+}
+
+    .navbar img {
+        height: 50px;
+    }
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #f8b400 !important;
+    }
+
+/* 🔹 Banner Section */
+.banner {
+    position: relative;
+    text-align: center;
+    background: url('images/banner.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto 2% auto 2%
+}
+
+    .banner h1 {
+        font-size: 2.5rem;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 15px 25px;
+        border-radius: 8px;
+        display: inline-block;
+    }
+
+/* 🔹 Services Section */
+.service-container {
+    background: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+    .service-container h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #343a40;
+    }
+
+    .service-container p {
+        color: #6c757d;
+        margin-bottom: 30px;
+    }
+
+    /* Service Cards */
+    .service-container .service-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .service-container .card {
+        width: 280px;
+        padding: 20px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .service-container .card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-container .card h3 {
+            color: #f8b400;
+            font-size: 1.5rem;
+        }
+
+        .service-container .card p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+/* 🔹 Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* 🔹 Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+        .navbar-nav .nav-item {
+            padding: 10px 0;
+        }
+
+    .banner {
+        height: 250px;
+        margin: auto 2% auto 2%
+    }
+
+        .banner h1 {
+            font-size: 2rem;
+        }
+
+    .service-container .service-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
