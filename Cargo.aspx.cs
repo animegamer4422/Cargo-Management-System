@@ -45,26 +45,52 @@ namespace CargoManagement
 
         private void LoadActiveDeliveries()
         {
+            // Ensure the user is logged in
+            if (Session["user_id"] == null)
+            {
+                Response.Redirect("Login.aspx");
+                return;
+            }
+
+            int userId = Convert.ToInt32(Session["user_id"]);
+
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                conn.Open();
-                string query = "SELECT tracking_id, sender_name, sender_city AS pickup, receiver_name, receiver_city AS destination, weight, volume, quantity, " +
-                               "CASE WHEN status = 0 THEN 'Pending' WHEN status = 1 THEN 'In Transit' WHEN status = 2 THEN 'Delivered' ELSE 'Unknown' END AS status " +
-                               "FROM cargo";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                try
                 {
-                    using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                    conn.Open();
+                    string query = @"SELECT tracking_id, sender_name, sender_city AS pickup, receiver_name, receiver_city AS destination, weight, volume, quantity, 
+                            CASE 
+                                WHEN status = 0 THEN 'Pending' 
+                                WHEN status = 1 THEN 'In Transit' 
+                                WHEN status = 2 THEN 'Delivered' 
+                                ELSE 'Unknown' 
+                            END AS status 
+                            FROM cargo 
+                            WHERE user_id = @user_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);
-                        gridCargo.DataSource = dt;
-                        gridCargo.DataBind();
+                        cmd.Parameters.AddWithValue("@user_id", userId); // Bind user ID
+
+                        using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            da.Fill(dt);
+                            gridCargo.DataSource = dt;
+                            gridCargo.DataBind();
+                        }
                     }
+                }
+                catch (Exception ex)
+                {
+                    lblMessage.Text = "Error loading deliveries: " + ex.Message;
+                    lblMessage.ForeColor = System.Drawing.Color.Red;
                 }
             }
         }
+
 
         private void LoadMaharashtraLocations()
         {
