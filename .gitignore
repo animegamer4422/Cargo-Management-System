@@ -35,7 +35,6 @@ yarn-error.log
 *.pyc
 
 # Ignore MySQL dumps and database backups
-*.sql
 *.bak
 *.db
 
