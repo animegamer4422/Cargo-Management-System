@@ -153,6 +153,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="AdminLogin.aspx" />
     <Content Include="Cancel.aspx" />
     <Content Include="Cargo.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -185,6 +187,7 @@
     <Content Include="login.aspx" />
     <Content Include="logo.png" />
     <Content Include="logout.aspx" />
+    <Content Include="ManageAdmins.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="profile.aspx" />
     <Content Include="register.aspx" />
@@ -258,6 +261,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Cancel.aspx.cs">
@@ -318,6 +335,13 @@
     </Compile>
     <Compile Include="logout.aspx.designer.cs">
       <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAdmins.aspx.cs">
+      <DependentUpon>ManageAdmins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageAdmins.aspx.designer.cs">
+      <DependentUpon>ManageAdmins.aspx</DependentUpon>
     </Compile>
     <Compile Include="Payment.aspx.cs">
       <DependentUpon>Payment.aspx</DependentUpon>

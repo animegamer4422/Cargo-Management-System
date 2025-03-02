@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`id`, `fullname`, `contact`, `city`, `email`, `password`, `re-password`, `datatime`) VALUES
+INSERT INTO `admin` (`id`, `fullname`, `contact`, `city`, `email`, `password`, `datatime`) VALUES
 (1, 'Prakash Deshmukh', 1752276521, 'Pune', 'prakash@gmail.com', '123457', '123457', '2022-04-09 07:45:49'),
 (2, 'Anil Jadhav', 1346583921, 'Mumbai', 'aniljadhav@gmail.com', '123456', '123456', '2022-04-09 11:40:24');
 
