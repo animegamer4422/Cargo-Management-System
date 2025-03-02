@@ -180,6 +180,7 @@
     <Content Include="Header.ascx" />
     <Content Include="images\bg.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\mem-1.png" />
     <Content Include="Invoice.aspx" />
     <Content Include="login.aspx" />
     <Content Include="logo.png" />

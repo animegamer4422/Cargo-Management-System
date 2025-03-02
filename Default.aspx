@@ -44,6 +44,40 @@
             </div>
         </div>
 
+        <!-- 🔹 Our Members Section -->
+        <div class="members-section py-5 bg-light">
+            <div class="container text-center">
+                <h2>Our Members</h2>
+                <p>Meet the team behind our success.</p>
+
+                <div class="row justify-content-center">
+                    <!-- Member 1 -->
+                    <div class="col-md-4">
+                        <div class="member-card">
+                            <img src="images/mem-1.png" alt="Rob Boss" class="profile-img">
+                            <h4>Rob Boss</h4>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="col-md-4">
+                        <div class="member-card">
+                            <img src="images/mem-2.png" alt="Member 2" class="profile-img">
+                            <h4>Knee-Onu Reefs</h4>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="col-md-4">
+                        <div class="member-card">
+                            <img src="images/mem-3.png" alt="Member 3" class="profile-img">
+                            <h4>Nail daGrass Bison</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- 🔹 Load Footer -->
         <uc:Footer runat="server" />
     </form>
