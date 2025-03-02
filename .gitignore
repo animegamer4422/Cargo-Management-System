@@ -40,3 +40,6 @@ yarn-error.log
 
 # Ignore ASP.NET generated files
 Generated_Code/
+
+# Ignore Web Config
+web.config*
